@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>your reading list</title>
+    <title>your watchinglist list</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="name">
+        <h1>placeholder name</h1>
+        <img src="" alt="logoHere">
+    </div>
+    <div class="main">
+        <div class="menu">
+            <input type="checkbox" id="toggle">
+            <div class="toggle">
+                <img src="" alt="addBook">
+            </div>
 
-
-    
+            <div class="addition">
+                <form id="form">
+                    <div class="form-container">
+                        <h1 class="header">New ...</h1>
+                        <div class="inputs">
+                            <label for="title"></label>
+                            <input type="text" name="title" id="title" readonly>
+                            <span>Title</span>
+                        </div>
+                        <div class="inputs">
+                            <label for="creator"></label>
+                            <input type="text" name="creator" id="creator" readonly>
+                            <span>Creator</span> 
+                        </div>
+                        <div class="inputs">
+                            <label for="episodes"></label>
+                            <input type="number" name="episodes" id="ep"required>
+                            <span>Episodes</span>
+                        </div>
+                        <div class="inputs">
+                            <span class="fin">fin</span>
+                            <label class="fin">
+                                <input type="checkbox" class="checked">
+                                <span class="check"></span>
+                            </label>
+                        </div>
+                        <div id="btn">
+                            <button type="submit" class="sub-btn">Add to tree</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
