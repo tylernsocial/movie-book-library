@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="name">
-        <h1>placeholder name</h1>
-        <img src="" alt="logoHere">
+    <div class="name reveal">
+        <h1>watchingtree</h1>
+        <img src="./assets/leaf.svg" alt="logoHere" class="org">
+        <img src="./assets/leaf2.svg" alt="logoHere" class="org2">
     </div>
     <div class="main">
-        <div class="menu">
-            <input type="checkbox" id="toggle">
+        <div id="toggleMenu">
+            <input type="checkbox" id="toggleCheck">
             <div class="toggle">
-                <img src="" alt="addBook">
+                <img src="./assets/plus.svg" alt="addBook">
             </div>
 
-            <div class="addition">
-                <form id="form">
+            <div class="addition" id="menu">
+                <form id="formss">
                     <div class="form-container">
                         <h1 class="header">New ...</h1>
                         <div class="inputs">
                             <label for="title"></label>
-                            <input type="text" name="title" id="title" readonly>
+                            <input type="text" name="title" id="title" required>
                             <span>Title</span>
                         </div>
                         <div class="inputs">
                             <label for="creator"></label>
-                            <input type="text" name="creator" id="creator" readonly>
+                            <input type="text" name="creator" id="creator" required>
                             <span>Creator</span> 
                         </div>
                         <div class="inputs">
@@ -37,9 +38,9 @@
                             <input type="number" name="episodes" id="ep"required>
                             <span>Episodes</span>
                         </div>
-                        <div class="inputs">
-                            <span class="fin">fin</span>
-                            <label class="fin">
+                        <div class="inputs checkbox">
+                            <span class="checkbox">fin</span>
+                            <label class="fin-container">
                                 <input type="checkbox" class="checked">
                                 <span class="check"></span>
                             </label>
@@ -53,9 +54,10 @@
         </div>
     </div>
     <main>
-        <div class="start-up">
+        <div class="start-up default">
             <h2>your tree has no leaves</h2>
             <p>Click the "<strong>+</strong>" button to add a new leaf to represent a new show or movie that you are currently or finished watching</p>
+            <button class="try-books">Try some books</button>
         </div>
     </main>
 <script src="script.js"></script>
