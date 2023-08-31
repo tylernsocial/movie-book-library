@@ -2,64 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>your watchinglist list</title>
+    <title>watchleaf</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/movie.svg">
 </head>
 <body>
-    <div class="name reveal">
-        <h1>watchingtree</h1>
-        <img src="./assets/leaf.svg" alt="logoHere" class="org">
-        <img src="./assets/leaf2.svg" alt="logoHere" class="org2">
-    </div>
-    <div class="main">
-        <div id="toggleMenu">
-            <input type="checkbox" id="toggleCheck">
-            <div class="toggle">
-                <img src="./assets/plus.svg" alt="addBook">
-            </div>
 
-            <div class="addition" id="menu">
-                <form id="formss">
+    <header class="reveal-down">
+        <h1>Watchtree</h1>
+        <img src="./assets/leaf.svg" alt="" aria-hidden="true" class="logo">
+        <img src="./assets/leaf2.svg" alt="" aria-hidden="true" class="logo2">
+    </header>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" id="togglerCheckbox"/>
+            <div class="toggle">
+                <img src="./assets/plus.svg" alt="add-book">
+            </div>
+    
+            <section class="pop-up" id="menu">
+                <form id="book-form">
                     <div class="form-container">
-                        <h1 class="header">New ...</h1>
-                        <div class="inputs">
+                        <h1 class="form-header">
+                            New Show
+                        </h1>
+                        <div class="input-container">
                             <label for="title"></label>
                             <input type="text" name="title" id="title" required>
-                            <span>Title</span>
+                            <span>
+                                title
+                            </span>
                         </div>
-                        <div class="inputs">
-                            <label for="creator"></label>
-                            <input type="text" name="creator" id="creator" required>
-                            <span>Creator</span> 
+                        <div class="input-container">
+                            <label for="author"></label>
+                            <input type="text" name="author" id="author" required>
+                            <span>
+                                creator
+                            </span>
                         </div>
-                        <div class="inputs">
-                            <label for="episodes"></label>
-                            <input type="number" name="episodes" id="ep"required>
-                            <span>Episodes</span>
+                        <div class="input-container">
+                            <label for="pages">
+                            </label>
+                            <input type="number" name="pages" id="pages" min="1" required>
+                            <span>
+                                episodes
+                            </span>
                         </div>
-                        <div class="inputs checkbox">
-                            <span class="checkbox">fin</span>
-                            <label class="fin-container">
-                                <input type="checkbox" class="checked">
-                                <span class="check"></span>
+                        <div class="input-container checkbox">
+                            <span class="checkbox">
+                                completed?
+                            </span>
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="read-status-determiner" checked>
+                                <span class="checkmark"></span>
                             </label>
                         </div>
-                        <div id="btn">
-                            <button type="submit" class="sub-btn">Add to tree</button>
+                        <div id="btm">
+                            <button type="submit" class="submit-btn">Add to tree</button>
                         </div>
                     </div>
                 </form>
-            </div>
+            </section>
         </div>
-    </div>
+    </nav>    
+
     <main>
-        <div class="start-up default">
-            <h2>your tree has no leaves</h2>
-            <p>Click the "<strong>+</strong>" button to add a new leaf to represent a new show or movie that you are currently or finished watching</p>
-            <button class="try-books">Try some books</button>
+        <div class="usage-tip book-card">
+            <h2>Your Watchtree is leafless!</h2>
+            <p>Click the <strong>+</strong> in order to add leaves these leaves represent the shows that you've finished or currently finishing</p>
         </div>
     </main>
-<script src="script.js"></script>
+
+   
+
+    <script src="script.js" defer></script>
 </body>
 </html>
