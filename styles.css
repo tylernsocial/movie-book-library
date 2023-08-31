@@ -276,7 +276,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 10px;
+    padding: 20px;
   }
   .form-header {
     letter-spacing: .07em;
@@ -645,5 +645,16 @@ button {
     width: 600px;
   }
 }
-  
+.foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+}
+.foot img {
+  width: 18px;
+  height: 18px;
+}
   
